@@ -50,6 +50,11 @@ namespace System.Security.Cryptography
 			throw new NotImplementedException ();
 		}
 
+		public RSAOpenSsl (RSAParameters parameters)
+		{
+			throw new NotImplementedException ();
+		}
+
 		public RSAOpenSsl (SafeEvpPKeyHandle pkeyHandle)
 		{
 			throw new NotImplementedException ();
