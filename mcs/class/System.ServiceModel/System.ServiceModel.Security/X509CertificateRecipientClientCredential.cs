@@ -76,6 +76,13 @@ namespace System.ServiceModel.Security
 			get { return scoped; }
 		}
 
+		[MonoTODO]
+		public X509ServiceCertificateAuthentication SslCertificateAuthentication
+		{
+			get { throw NotImplementedException (); }
+			set { throw NotImplementedException (); }
+		}
+
 		public void SetDefaultCertificate (string subjectName,
 			StoreLocation storeLocation, StoreName storeName)
 		{
