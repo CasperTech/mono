@@ -26,6 +26,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#if (NETSTANDARD && !IN_FACADE) || (!NETSTANDARD && IN_FACADE)
+
 namespace System.Security.Cryptography
 {
     public sealed class IncrementalHash : IDisposable
@@ -40,3 +42,5 @@ namespace System.Security.Cryptography
         public byte[] GetHashAndReset () { throw new NotImplementedException (); }
     }
 }
+
+#endif
