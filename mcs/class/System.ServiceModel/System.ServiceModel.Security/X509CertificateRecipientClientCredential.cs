@@ -79,8 +79,8 @@ namespace System.ServiceModel.Security
 		[MonoTODO]
 		public X509ServiceCertificateAuthentication SslCertificateAuthentication
 		{
-			get { throw NotImplementedException (); }
-			set { throw NotImplementedException (); }
+			get { throw new NotImplementedException (); }
+			set { throw new NotImplementedException (); }
 		}
 
 		public void SetDefaultCertificate (string subjectName,
