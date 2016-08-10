@@ -834,9 +834,17 @@ namespace System
 
 		public static bool CapsLock { get { throw new PlatformNotSupportedException (); } }
 
-		public static int CursorLeft { get { throw new PlatformNotSupportedException (); } }
+		public static int CursorLeft
+		{
+			get { throw new PlatformNotSupportedException (); }
+			set { throw new PlatformNotSupportedException (); }
+		}
 
-		public static int CursorTop { get { throw new PlatformNotSupportedException (); } }
+		public static int CursorTop
+		{
+			get { throw new PlatformNotSupportedException (); }
+			set { throw new PlatformNotSupportedException (); }
+		}
 
 		public static int CursorSize
 		{
@@ -902,11 +910,11 @@ namespace System
 			set { throw new PlatformNotSupportedException (); }
 		}
 
-		public static bool IsErrorRedirected () { throw new PlatformNotSupportedException (); }
+		public static bool IsErrorRedirected { get { throw new PlatformNotSupportedException (); } }
 
-		public static bool IsInputRedirected () { throw new PlatformNotSupportedException (); }
+		public static bool IsInputRedirected { get { throw new PlatformNotSupportedException (); } }
 
-		public static bool IsOutputRedirected () { throw new PlatformNotSupportedException (); }
+		public static bool IsOutputRedirected { get { throw new PlatformNotSupportedException (); } }
 
 		public static void Beep () { throw new PlatformNotSupportedException (); }
 
