@@ -937,7 +937,7 @@ namespace Microsoft.SqlServer.Server {
 		}
 
 		[MonoTODO]
-		public SqlString Adjust (SqlXml value)
+		public SqlXml Adjust (SqlXml value)
 		{
 			throw new NotImplementedException ();
 		}
